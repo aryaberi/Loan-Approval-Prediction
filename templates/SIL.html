@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Loan Approval Prediction</title>
+</head>
+<style>
+section#container{
+height: 1024px;
+width: 1440px;
+}
+section#tittle{
+  height: 53px;
+  width: 1414px;
+  background-color: #18A0FB;
+  color: #FFFFFF;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+section#fill{
+  margin-left: 30px;
+}
+</style>
+
+<body>
+  <section id="container">
+   <section id="tittle">
+     SIL- Loan Approval Prediction
+   </section>
+   <form action="#" method="post">
+    <section id="fill">
+        <section name="Gender" id="Gender" multiple>
+          <p>Gender</p>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label><br>
+        </section>
+        <section name="Married" id="Married" multiple>
+          <p>Married</p>
+            <input type="radio" id="Yes" name="Married" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="Married" value="No">
+            <label for="No">No</label><br><br>
+        </section>
+        <section class="dependents">
+          <label for="dependents">Dependents</label></div><br><br>
+          <select id="dependents" name="dependents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3+">3+</option>
+          </select>
+        </section>
+        <section name="Graduate" id="Graduate" multiple>
+          <p>Graduate</p>
+            <input type="radio" id="Graduate" name="Graduate" value="Graduate">
+            <label for="Graduate">Graduate</label><br>
+            <input type="radio" id="Undergraduate" name="Graduate" value="Undergraduate">
+            <label for="Undergraduate">Undergraduate</label><br>
+        </section>
+        <section name="Employed" id="Employed" multiple>
+          <p>Employed</p>
+            <input type="radio" id="Yes" name="Employed" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="Employed" value="No">
+            <label for="No">No</label><br><br>
+        </section>
+        <section id="applicant_income">
+          <label for="applicant_income">Applicant Income (Rp.)</label><br><br>
+          <input type="text" id="applicant_income" name="applicant_income"><br><br>
+        </section>
+        <section id="coapplicant_income">
+          <label for="coapplicant_income">Coapplicant Income (Rp.)</label><br><br>
+          <input type="text" id="coapplicant_income" name="coapplicant_income"><br><br>
+        </section>
+        <section id="loan_amount">
+          <label for="loan_amount">Loan Amount (Rp.)</label><br><br>
+          <input type="text" id="loan_amount" name="loan_amount"><br><br>
+        </section>
+        <section id="loan_amount_term">
+          <label for="loan_amountt_term">Loan Amount Term (hari)</label><br><br>
+          <input type="text" id="loan_amountt_term" name="loan_amountt_term"><br><br>
+        </section>
+        <section id="property_area">
+          <label for="property_area">Property Area</label></div><br><br>
+          <select id="property_area" name="property_area">
+            <option value="Urban">Urban</option>
+            <option value="SemiUrban">Semi Urban</option>
+            <option value="Rural">Rural</option>
+          </select>
+        </section>
+        <section>
+          <input type="submit", value="submit">
+        </section>
+        <section>
+          {% for x in content%}
+            <p>{{x}}</p>
+          {%endfor%}
+        </section>   
+    </section>
+   </form>
+  </section>
+</html>

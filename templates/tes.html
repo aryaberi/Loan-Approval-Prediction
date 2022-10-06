@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Loan Approval</title>
+    </head>
+    <style>
+        section#tittle{
+          height: 53px;
+          width: 1414px;
+          background-color: #18A0FB;
+          color: #FFFFFF;
+          font-size: 24px;
+          text-align: center;
+          padding-top: 20px;
+          border-radius: 10px;
+        }
+    </style>    
+    <body>
+        <section id="tittle">
+            SIL- Loan Approval Prediction
+        </section>
+        
+        {% for x in content%}
+            <p> Loan approval : {{x}} </p>
+        {%endfor%}
+
+        <button><a class = "nav-link" href="/">Restart</a></button>
+    </body>
+    
+</html>
